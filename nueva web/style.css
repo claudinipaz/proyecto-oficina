@@ -1,0 +1,121 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+}
+.header{
+    background-color: rgb(150, 150, 233);
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 10;
+    left: 0;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  max-width: 992px;
+  margin: 0 auto;
+   
+}
+.nav-link{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+    color: black;
+}
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+    color: black
+    
+}
+.nav-menu-item{
+    font: size 18px; ;
+    color: black;
+    margin: 0 10px;
+    line-height: 80px;
+    width: max-content;
+}
+.nav-menu-link:hover{
+    background-color: rgba(255, 255, 255, 0.404);
+}
+.nav-menu-link{
+    padding:8 px 12 px;
+    border-radius: 3px;
+    transition:0.5s;
+}
+.icon-menu{
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+@media (max-width:768px){
+    body{
+        padding-top:{
+            70px;
+        }
+    }
+
+    .header{
+       
+        height: 60px;
+
+    }
+    
+    .logo{
+        font-size: 25px;
+        
+        padding: 0 20px;
+        line-height: 60px;
+      
+    }
+    .nav-menu{
+        flex-direction: column;
+        margin-right: 20px;
+        background-color: rgb(110, 114, 113);
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        align-items: center;
+        padding: 20px 0;
+        height: fit-content;
+        overflow-y: auto;
+    }
+    .nav-menu-item{
+      
+        line-height: 70px;
+       
+    }
+    .nav-menu-link:hover{
+        background: none;
+        color: beige;
+    }
+    .nav-menu-link{
+        padding:8 px 12 px;
+        border-radius: 3px;
+        transition:0.5s;
+    }
+    .icon-menu {
+        display: block;
+        width: 1em;
+        height: 1em;
+        stroke-width: 0;
+        stroke: currentColor;
+        fill: currentColor;
+      }
+}
